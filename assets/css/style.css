@@ -79,7 +79,8 @@ p {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #000; 
+  -webkit-box-shadow: inset 0 0 5px #000;
+          box-shadow: inset 0 0 5px #000; 
   border-radius: 0px;
 }
 
@@ -188,6 +189,7 @@ p {
   right: 100%;
   margin: auto;
   z-index: 998;
+  -webkit-transition: all 0.5 ease-in-out;
   transition: all 0.5 ease-in-out;
   background-color: rgba(0, 0, 0, .5);
 
@@ -199,7 +201,9 @@ p {
 .sidebarNavigation {
   margin-bottom: 0;
   z-index: 999;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .sidebarNavigation .leftNavbarToggler {
   margin-right: 10px;
@@ -207,6 +211,7 @@ p {
 .sideMenu {
   left: -100%;
   top: 0;
+  -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   overflow: hidden;
   width: 100%;
@@ -253,14 +258,16 @@ p {
   color: #fff;
   background-color: #fcd05f;
   border-color: rgba(255, 255, 255, 0);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
 .btn-primary:hover {
   color: #fff;
   background-color: #fcd05f;
   border-color: rgba(255, 255, 255, 0);
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+          box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   outline: 0;
 }
 
@@ -297,18 +304,22 @@ p {
   -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out
 
 }
 
 .card {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
   border: 0;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .card:hover {
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+          box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   outline: 0;
 }
 
@@ -316,14 +327,16 @@ p {
   color: #fff;
   background-color: #fcd05f;
   border-color: #fcd05f;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
 .widget .card-body .btn-secondary:hover {
   color: #fff;
   background-color: #fcd05f;
   border-color: #fcd05f;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+          box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   outline: 0;
 }
 .widget .card-body p {
@@ -531,7 +544,8 @@ p {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0; 
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12); 
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
 
 }
 
@@ -565,6 +579,7 @@ p {
 .search .btn-outline-warning:hover {
   color: #fff;
   border-color: #fcd05f;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out
 }
 /*--------------------------------------------------
@@ -599,17 +614,20 @@ p {
 {
   background-color: #fcd05f;
   color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out
 }
 .slider .header-widgets:hover 
 {
   background-color: #fcd05f;
   color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out
 }
 .slider .header-widgets:hover a
 {
   color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out
 }
 
@@ -713,9 +731,11 @@ p {
 }
 .canlearn .hover:hover
 {
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+          box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   outline: 0;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out
 }
 .canlearn .engineering {
@@ -793,7 +813,8 @@ p {
   border-radius: 3px;
   background-image: radial-gradient(circle, #40454c, #454a52, #494f57, #4e555d, #535a63);
   display: inline-block;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
 
 #offers .smalltext {
@@ -933,7 +954,8 @@ p {
   vertical-align: middle;
   height: 50px;
   border-radius: 0;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
 
 #newsletter .btn-outline-success {
@@ -949,7 +971,8 @@ p {
 .btn-outline-success:not(:disabled):not(.disabled):active:focus,
 .btn-outline-success:not(:disabled):not(.disabled).active:focus,
 .show>.btn-outline-success.dropdown-toggle:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /* ========== Start What people say ========== */
@@ -998,7 +1021,8 @@ p {
   font-size: 15px;
   padding: 20px 25px;
   border-radius: 50%;
-  transform: translateX(-25%) translateY(-45%);
+  -webkit-transform: translateX(-25%) translateY(-45%);
+          transform: translateX(-25%) translateY(-45%);
 }
 
 #people-say .pulse {
@@ -1011,9 +1035,28 @@ p {
 /* Keyframes */
 
 
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgb(252, 208, 95);
+            box-shadow: 0 0 0 0 rgb(252, 208, 95);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgb(252, 208, 95);
+    -webkit-box-shadow: 0 0 0 0 rgb(252, 208, 95);
+            box-shadow: 0 0 0 0 rgb(252, 208, 95);
   }
 
   70% {
@@ -1039,12 +1082,15 @@ p {
 }
 
 #blog .card {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
   border: 0;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 #blog .card:hover {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   outline: 0;
 }
 #blog .card-title
@@ -1093,7 +1139,8 @@ p {
   text-align: center;
   font-size: 18px;
   margin: 5px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
 #blog-post .blog-social .fa-facebook-f
 {
@@ -1487,7 +1534,8 @@ p {
 }
 
 #listing-layout .card {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 0;
 }
 
@@ -1599,7 +1647,8 @@ p {
 
 #single-course .btn-link:focus, .btn-link.focus {
   text-decoration: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .reviews .rating
@@ -1621,7 +1670,8 @@ p {
 .reviews .progress{
   background-color: #c4c4c4;
   border-radius: 0;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   margin: 20px 50px 0 100px;
   overflow: visible;
   position: relative;
@@ -1688,6 +1738,7 @@ p {
 #single-course .widget .btn-outline-warning:hover
 {
   color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   
 }
@@ -1757,7 +1808,10 @@ p {
     background-clip: padding-box;
     border: 1px solid #efefef;
     border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 /*--------------------------------------------------
 [3. Start Footer ]
@@ -1822,6 +1876,7 @@ p {
 {
     cursor: pointer;
     font-size: 20px;
+    -webkit-transition:  all 0.5s ease-in-out;
     transition:  all 0.5s ease-in-out;
     text-align: center
 }
