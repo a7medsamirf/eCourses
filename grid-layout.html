@@ -1,0 +1,541 @@
+<!--A Design by Medala Solution
+Author: Ahmed Samir
+Template Name: eCourses | Personal Portfolio HTML5 Template
+Author URL: https://www.facebook.com/a7med.samir.f
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eCourses</title>
+
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/slick-theme.css" />
+  <link rel="stylesheet" href="assets/css/slick.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="assets/images/logo.png">
+
+</head>
+
+<body>
+  <header id="min-header" class="header-section fadeIn animated cssanimation">
+    <!-- ======== Start Top Nav ======== -->
+    <div class="top-header">
+      <div class="container">
+        <div class="top-content-wrap row">
+          <div class="call-info d-none d-lg-block">
+            <div class="question">Have any question?</div>
+            <div class="call-on"><i class="fas fa-phone"></i> 0123-456-789</div>
+            <div class="mail-to"><a href="mailto:ahmed.samir.farid@gmail.com"><i class="far fa-envelope"></i>
+                eCourses@info.com</a></div>
+          </div>
+          <div class="user-login ml-auto">
+            <div class="register"><i class="fas fa-user-plus"></i>
+             <a href="register.html">Register</a>
+            </div>
+            <div class="login"><i class="fas fa-user"></i>
+              <a href="login.html">Login</a>
+            </div>
+            <span class="separator-pipesign"></span>
+            <div class="instructor"> Become an Instructor</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ======== End Top Nav ======== -->
+
+    <!-- ======== Start Navbar ======== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sidebarNavigation" data-sidebarclass="navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span>e</span>Cours<span>e</span>s</a>
+            <button class="navbar-toggler leftNavbarToggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse show" id="navbarSupportedContent" style="display: none;">
+          <ul class="navbar-nav ml-auto">
+              <a class="navbar-brand d-lg-none" href="index.html"><span>e</span>Cours<span>e</span>s</a>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                COURSES
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item active" href="grid-layout.html">Grid Layout</a>
+                <a class="dropdown-item" href="listing-layout.html">Listing Layout</a>
+                <a class="dropdown-item" href="single-course.html">Single course</a>        
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                PAGES
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Pricing.html">Pricing</a>
+                <a class="dropdown-item" href="404.html">404</a>
+                <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                <a class="dropdown-item" href="dashboard-mange.html">Dashboard Mange</a>
+                <a class="dropdown-item" href="dashboard-billing.html">Edit Billing</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                BLOGS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="blog.html">BLOGS</a>
+                <a class="dropdown-item" href="blog-post.html">Single post</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT US</a>
+            </li>
+            <div class="search">
+              <li class="nav-item icon active dropdown">
+                <i class="fas fa-search" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false"></i>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="display: none;">
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- ======== End Navbar ======== -->
+  </header>  
+
+
+  <div id="grid-layout">
+    <div class="breadcrumb-header">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">All Courses</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="content">
+      <div class="container">
+          <div class="row justify-content-center">
+              <!-- Blog Entries Column -->
+              <div class="col-md-12">
+                  <div class="heading mb-5">
+                      <h2>ALL COURSES</h2>
+                      <span class="line"></span>
+                  </div>
+              </div>
+             
+
+              <div class="col-md-8">
+                <div class="helpbar text-center">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-12 mt-3">
+                      <ul class="grid-listing">
+                        <li class="active">
+                            <a href="grid-layout.html"> <i class="fas fa-th-large fa-lg"></i></a>
+
+                        </li>
+                        <li>
+                            <a href="listing-layout.html"> <i class="fas fa-th-list fa-lg"></i></a>
+
+                        </li>
+                    </ul>
+                   
+               
+                    </div>
+                    <div class="col-lg-5 col-md-12 mt-3">
+                        <div class="form-group">
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>All Courses</option>
+                            <option>WordPress Development</option>
+                            <option>Adobe Photoshop CC</option>
+                            <option>Javascript for beginners</option>
+                            <option>Online Marketing Strategies</option>
+                          </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-12 mt-3">
+                       <form class="form-inline">
+                          <i class="fas fa-search"></i>
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search our courses" aria-label="Search">
+                      
+
+                </form>
+                          </div>
+                  </div>
+                </div>
+                  <div class="row courses">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                      <div class="card">
+                        <img src="assets/images/popular/WordPress.png" class="img-fluid card-img-top" alt="WordPress">
+                        <div class="salary">
+                          <p>$24.99</p>
+                        </div>
+                        <div class="card-body text-center">
+                          <a href="#" class="card-title">WordPress Development
+                              with Bootstrap</a>
+                          <p class="card-text">Jason Hopkins</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted"><i class="fas fa-comment"></i>222</small>
+                          <small class="text-muted"><i class="fas fa-user"></i>144</small>
+                          <small class="text-muted rating">★★★★☆</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                        <div class="card">
+                          <img src="assets/images/popular/photoshop.png" class="img-fluid card-img-top" alt="WordPress">
+                          <div class="salary">
+                            <p>$15</p>
+                          </div>
+                          <div class="card-body text-center">
+                            <a href="#" class="card-title">Adobe Photoshop CC For 
+                                Photographers</a>
+                            <p class="card-text">Mary Howard</p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted"><i class="fas fa-comment"></i>34</small>
+                            <small class="text-muted"><i class="fas fa-user"></i>89</small>
+                            <small class="text-muted rating">★★☆☆☆</small>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                      <div class="card">
+                        <img src="assets/images/popular/Security.jpg" class="img-fluid card-img-top" alt="Security">
+                        <div class="salary">
+                          <p>$20.99</p>
+                        </div>
+                        <div class="card-body text-center">
+                          <a href="#" class="card-title">Linux Security and Hardening, 
+                              The Practical Security Guide</a>
+                          <p class="card-text">Christian Ramirez</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted"><i class="fas fa-comment"></i>22</small>
+                          <small class="text-muted"><i class="fas fa-user"></i>144</small>
+                          <small class="text-muted rating">★★★☆☆</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                      <div class="card">
+                        <img src="assets/images/popular/Marketing.jpg" class="img-fluid card-img-top" alt="Marketing">
+                        <div class="salary">
+                          <p class="free">free</p>
+                        </div>
+                        <div class="card-body text-center">
+                          <a href="#" class="card-title">Online Marketing Strategies</a>
+                          <p class="card-text">Albert Alexander</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted"><i class="fas fa-comment"></i>75</small>
+                          <small class="text-muted"><i class="fas fa-user"></i>3541</small>
+                          <small class="text-muted rating">★★★★☆</small>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                    <div class="card">
+                      <img src="assets/images/popular/Javascript.png" class="img-fluid card-img-top" alt="Javascript">
+                      <div class="salary">
+                        <p>$15</p>
+                      </div>
+                      <div class="card-body text-center">
+                        <a href="#" class="card-title">Javascript for beginners</a>
+                        <p class="card-text">Marvin Stone</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted"><i class="fas fa-comment"></i>101</small>
+                        <small class="text-muted"><i class="fas fa-user"></i>541</small>
+                        <small class="text-muted rating">★★★★☆</small>
+                      </div>
+                    </div>
+                  </div>
+  
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                      <div class="card">
+                        <img src="assets/images/popular/angular.jpg" class="img-fluid card-img-top" alt="WordPress">
+                        <div class="salary">
+                          <p>$15</p>
+                        </div>
+                        <div class="card-body text-center">
+                          <a href="#" class="card-title">Learn and Understand AngularJS</a>
+                          <p class="card-text">Walter Patel</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted"><i class="fas fa-comment"></i>314</small>
+                          <small class="text-muted"><i class="fas fa-user"></i>144</small>
+                          <small class="text-muted rating">★★☆☆☆</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                      <div class="card">
+                        <img src="assets/images/popular/Yoga.jpg" class="img-fluid card-img-top" alt="WordPress">
+                        <div class="salary">
+                          <p>$15</p>
+                        </div>
+                        <div class="card-body text-center">
+                          <a href="#" class="card-title">Yoga and Meditation : Beginners
+                              guide</a>
+                          <p class="card-text">Marvin Stone</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted"><i class="fas fa-comment"></i>14</small>
+                          <small class="text-muted"><i class="fas fa-user"></i>1</small>
+                          <small class="text-muted rating">★★☆☆☆</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                      <div class="card">
+                        <img src="assets/images/popular/The-Elements.jpg" class="img-fluid card-img-top" alt="WordPress">
+                        <div class="salary">
+                          <p>$15</p>
+                        </div>
+                        <div class="card-body text-center">
+                          <a href="#" class="card-title">The Elements of English Grammar</a>
+                          <p class="card-text">Keith Andrews</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted"><i class="fas fa-comment"></i>204</small>
+                          <small class="text-muted"><i class="fas fa-user"></i>819</small>
+                          <small class="text-muted rating">★★★★☆</small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                      <div class="card">
+                        <img src="assets/images/popular/Social-Media.jpg" class="img-fluid card-img-top" alt="WordPress">
+                        <div class="salary">
+                          <p>$15</p>
+                        </div>
+                        <div class="card-body text-center">
+                          <a href="#" class="card-title">Social Media Marketing For Business</a>
+                          <p class="card-text">Jose Black</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted"><i class="fas fa-comment"></i>11</small>
+                          <small class="text-muted"><i class="fas fa-user"></i>541</small>
+                          <small class="text-muted rating">★★★★☆</small>
+                        </div>
+                      </div>
+                    </div>
+
+ 
+                  </div>
+                
+
+               <!-- Pagination -->
+               <nav aria-label="..." class="mb-5">
+                  <ul class="pagination mt-5">
+                      <li class="page-item disabled">
+                        
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active" aria-current="page">
+                          <span class="page-link">
+                              2
+                              <span class="sr-only">(current)</span>
+                          </span>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item">
+                        
+                      </li>
+                  </ul>
+              </nav>
+
+
+              </div>
+
+
+              <!-- Sidebar Widgets Column -->
+              <div class="col-md-4">
+                  <div class="heading mb-5">
+                      <h2>FEATURED COURSES</h2>
+                      <span class="line"></span>
+                  </div>
+                  <aside class="widget">
+
+                      <!-- Side Widget -->
+                      <div class="my-4 courses-widget">
+                          <div class="card-body">
+                              <div class="media">
+                                  <img src="assets/images/blog/GitHub.png" class="img-fluid card-img-top mr-4" alt="GitHub">
+                                  <div class="media-body">
+                                      <h5 class="mt-0">Billy Harris</h5>
+                                      <p>GitHub Fundamentals</p>
+                                      <span>$14</span>
+                                  </div>
+                              </div>
+                              <div class="media mt-4">
+                                  <img src="assets/images/blog/Jekyll.png" class="img-fluid card-img-top mr-4" alt="Jekyll">
+                                  <div class="media-body">
+                                      <h5 class="mt-0">Nicholas Powell</h5>
+                                      <p>Building a Website With Jekyll</p>
+                                      <span class="free">Free</span>
+                                  </div>
+                              </div>
+                              <div class="media mt-4">
+                                  <img src="assets/images/blog/Swift.png" class="card-img-top mr-4" alt="Swift">
+                                  <div class="media-body">
+                                      <h5 class="mt-0">Ann Thomas</h5>
+                                      <p>Swift for absolute beginners</p>
+                                      <span>$35</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+     
+                  </aside>
+              </div>
+          </div>
+          <!-- /.row -->
+      </div>
+  </div>
+
+
+
+
+  <!-- ======== Start footer ======== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-5">
+          <div class="about-us">
+            <div class="heading">
+              <h5>ABOUT US</h5>
+              <span class="line"></span>
+            </div>
+            <div class="text mt-5">
+              <p>Disrupt brooklyn flexitarian knausgaard hoodie. Authentic banh mi photo booth,
+                crucifix blue bottle pop-up viralFranzen paleo vice,
+                kogi cray wolf portland humblebrag shoreditch vinyl master cleanse gentrify cred ugh.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mt-5">
+          <div class="links">
+            <div class="heading">
+              <h5>LINKS</h5><span class="line"></span>
+            </div>
+            <ul class="footer-menu mt-5">
+              <li><a href="#"><i class="fas fa-angle-right"></i> Courses</a></li>
+              <li><a href="#"><i class="fas fa-angle-right mt-3"></i> Events</a></li>
+              <li><a href="#"><i class="fas fa-angle-right mt-3"></i> Gallery</a></li>
+              <li><a href="#"><i class="fas fa-angle-right mt-3"></i> FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mt-5">
+          <div class="SUPPORT">
+            <div class="heading">
+              <h5>support</h5><span class="line"></span>
+            </div>
+            <ul class="footer-menu mt-5">
+              <li><a href="#"><i class="fas fa-angle-right"></i> Forums</a></li>
+              <li><a href="#"><i class="fas fa-angle-right mt-3"></i> Blog</a></li>
+              <li><a href="#"><i class="fas fa-angle-right mt-3"></i> Documentation</a></li>
+              <li><a href="#"><i class="fas fa-angle-right mt-3"></i> Release Status</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mt-5">
+          <div class="browse">
+            <div class="heading">
+              <h5>BROWSE</h5><span class="line"></span>
+            </div>
+            <ul class="footer-menu mt-5">
+              <li><a href="#"><i class="fas fa-angle-right"></i> Wordpress</a></li>
+              <li><a href="#"><i class="fas fa-angle-right mt-3"></i> bbPress</a></li>
+              <li><a href="#"><i class="fas fa-angle-right mt-3"></i> WooCommerce</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-5">
+          <div class="heading logo">
+            <h5>
+              <span>e</span>Cours<span>e</span>s
+            </h5>
+          </div>
+          <ul class="footer-menu call-info mt-5">
+            <div class="call-on"><i class="fas fa-phone"></i>0123-456-789</div>
+            <div class="mail-to mt-3"><a href="mailto:ahmed.samir.farid@gmail.com"><i class="far fa-envelope"></i>eCourses@info.com</a></div>
+            <div class="social-icon mt-5 ml-3">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+          </ul">
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3 mt-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-md-6">
+            <div class="copy-right-text text-lg-left">© 2018 eCourses - by <a href="#">Medala Theme</a>- All rights
+              reserved </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <ul class="mr-auto">
+              <li><a href="#"> Privacy</a></li>
+              <li><a href="#"> Terms</a></li>
+              <li><a href="#"> Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ======== End footer ======== -->
+    
+      <!-- jquery library -->
+      <script src="assets/js/jquery-3.3.1.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      
+      <script src="assets/js/jquery.nicescroll.min.js"></script>
+      <script src="assets/js/slick.min.js"></script>
+      <script src="assets/js/jquery.fancybox.min.js"></script>
+      <script src="assets/js/custom.js"></script>
+    
+    </body>
+    
+    </html>
