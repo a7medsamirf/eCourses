@@ -1,0 +1,818 @@
+/*
+Template Name: Childcare | Personal Portfolio HTML5 Template
+Author: Ahmed Samir
+Author URI: https://www.facebook.com/a7med.samir.f
+Description: MartaUP | Personal Portfolio HTML5 Template
+Version: 1.0
+Tags: bootstrap, clean, creative, cv, freelancer, gallery, html5, one page, personal, portfolio, responsive, resume, simple, vcard
+*/
+
+/*
+Style Index
+==================================================
+    1. Basic Setup
+    2. Navigation Bar
+    3. Header Section
+    4. Together Section
+    5. Children Section
+    6. Campaign Section
+    7. Team Section
+    8. Testimonials Section
+    9. Blog Section
+    10. Make a Donation Section
+    11. Footer Section
+    12. Blog Page Section
+    13. Media Query Section
+*/
+
+/* Main Css Rules  for Main Elements in The project */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+/*--------------------------------------------------
+[1. Start Basic Setup ]
+--------------------------------------------------*/
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #fff;  
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.navbar {
+  padding: 15px 30px;
+  background: #121212 !important;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+  color: #c8ced3;
+}
+
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(0, 150, 136);
+}
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.sidebar-header h3,
+.sidebar-header strong {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Acme', sans-serif;
+  letter-spacing: 1px;
+}
+
+.sidebar-header span {
+  color: #fcd05f;
+}
+
+i,
+span {
+  display: inline-block;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #000; 
+  border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fcd05f ; 
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fcd05f ; 
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #fcd05f;
+  border-color: #fcd05f;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+}
+.btn-info:hover {
+  color: #fff;
+  background-color: #fcd05f;
+  border-color: #fcd05f;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+  outline: 0;
+}
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
+.show > .btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #fcd05f;
+  border-color: #fcd05f;
+}
+
+
+.notifications .dropdown-menu {
+  top: 100%;
+  right: 0;
+  left: initial;
+  z-index: 1000;
+  min-width: 21rem;
+  padding: 0.8rem 0;
+  margin: 1.5rem 0 0;
+  font-size: .8rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+}
+
+/* ---------------------------------------------------
+  SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+#sidebar {
+  min-width: 200px;
+  max-width: 200px;
+  background: #121212;
+  color: #fff;
+  transition: all 0.7s ease 0s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+}
+
+#sidebar.active {
+  min-width: 96px;
+  max-width: 96px;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+#sidebar.active .sidebar-header h3,
+#sidebar.active .CTAs {
+  display: none;
+}
+
+#sidebar.active .sidebar-header strong {
+  display: block;
+}
+
+#sidebar ul li a {
+  text-align: left;
+}
+
+#sidebar.active ul li a {
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+#sidebar.active ul li a i {
+  margin-right: 0;
+  display: block;
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+#sidebar.active ul ul a {
+  padding: 10px !important;
+}
+
+#sidebar.active .dropdown-toggle::after {
+  top: auto;
+  bottom: 10px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  text-align: center;
+
+}
+
+#sidebar .sidebar-header h3
+{
+  font-size: 1.5rem;
+}
+
+#sidebar .sidebar-header strong {
+  display: none;
+  font-size: 1.8em;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #222d32;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #fff;
+  background-color: #fcd05f;
+}
+
+#sidebar ul li a i {
+  margin-right: 10px;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+  color: #fff;
+  background: #1a2226;
+  padding: 12px 5px 12px 0px;
+  display: block;
+  border-left: 3px solid transparent;
+
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #1a2226;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #fff;
+  color: #222d32;
+}
+
+a.article,
+a.article:hover {
+  background: #6d7fcc !important;
+  color: #fff !important;
+}
+
+/* ---------------------------------------------------
+  CONTENT STYLE
+----------------------------------------------------- */
+.container-fluid
+{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#content {
+  width: calc(100% - 200px);
+  min-height: 100vh;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;}
+
+  #content.active {
+      width: 93%;
+  }
+
+  
+  @media (max-width: 1199.98px) {
+      #content
+      {
+          width: 80%
+      }
+
+      #content.active
+   {
+      width: 92%;
+   }
+  }
+  
+
+  @media (max-width: 991.98px) {
+      #content
+      {
+          width: 78%
+      }
+
+      #content.active
+   {
+      width: 90%;
+   }
+  }
+  
+  
+  @media (max-width: 768px) {
+      #content
+      {
+          width: 100%
+      }
+
+      #content.active
+   {
+      width: 87%;
+   }
+  }
+  
+  @media (max-width: 575.98px) {
+      #content
+      {
+          width: 100%
+      }
+
+      #content.active
+   {
+      width: 82%;
+   }
+  }
+
+  
+
+/* ---------------------------------------------------
+  MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+  #sidebar {
+      min-width: 82px;
+      max-width: 82px;
+      text-align: center;
+      margin-left: -82px !important;
+  }
+  .dropdown-toggle::after {
+      top: auto;
+      bottom: 10px;
+      right: 50%;
+      -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+      transform: translateX(50%);
+  }
+  #sidebar.active {
+      margin-left: 0 !important;
+  }
+  #sidebar .sidebar-header h3,
+  #sidebar .CTAs {
+      display: none;
+  }
+  #sidebar .sidebar-header strong {
+      display: block;
+  }
+  #sidebar ul li a {
+      padding: 20px 10px;
+  }
+  #sidebar ul li a span {
+      font-size: 0.85em;
+  }
+  #sidebar ul li a i {
+      margin-right: 0;
+      display: block;
+  }
+  #sidebar ul ul a {
+      padding: 10px !important;
+  }
+  #sidebar ul li a i {
+      font-size: 1.3em;
+  }
+  #sidebar {
+      margin-left: 0;
+  }
+  #sidebarCollapse span {
+      display: none;
+  }
+}
+
+
+
+.content-header>h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.content-header>h1>small {
+  font-size: 15px;
+  display: inline-block;
+  padding-left: 4px;
+  font-weight: 300;
+}
+
+.content {
+  min-height: 250px;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.info-box {
+  display: block;
+  min-height: 90px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.content-header>.breadcrumb>li>a>.fa,
+.content-header>.breadcrumb>li>a>.glyphicon,
+.content-header>.breadcrumb>li>a>.ion {
+  margin-right: 5px;
+}
+
+#content .navbar .dropdown-toggle::after
+{
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.content-header h1
+{
+  font-size: 1.5rem;
+  color: #009688;
+}
+
+.content-header ul
+{
+  list-style: none;
+  display: inline-flex;
+}
+
+
+/*--------------------------------------------------
+[2. Start Dashboard ]
+--------------------------------------------------*/
+#dashboard
+{
+  position: relative;
+}
+#dashboard  .subscription
+{
+  position: relative;
+  background-color: #f9f9f9;
+  display: flex;
+}
+#dashboard  .subscription .fa-battery-quarter
+{
+  background-color: #85c486;
+  padding: 5px 20px;
+ 
+}
+#dashboard  .subscription .battery span
+{
+  color: #000
+}
+#dashboard .battery
+{
+  flex: 1
+}
+#dashboard .courses,
+#dashboard .certificates,
+#dashboard .quizzes
+{
+  background-color: #f9f9f9;
+  padding: 30px;
+}
+
+#dashboard .card {
+  position: relative;
+  cursor: pointer;
+}
+
+#dashboard .card .salary {
+  position: absolute;
+  top: 10px
+}
+
+#dashboard .salary p {
+  background-color: #eb624c;
+  padding: 3px 20px;
+  color: #fff;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px
+}
+
+#dashboard .salary .free {
+  background-color: #10c45c;
+  padding: 3px 17px;
+}
+
+#dashboard .card-footer i {
+  padding-left: 8px;
+  padding-right: 5px;
+}
+
+#dashboard .card-body {
+  padding: 20px 0;
+}
+
+#dashboard .card-body p {
+  color: #9d9fa6;
+  font-size: 14px;
+  font-weight: 600
+}
+
+#dashboard .card-body a {
+  font-size: 14px;
+  color: #456d8f;
+  font-weight: 600;
+}
+
+#dashboard .card-footer .rating {
+  float: right;
+  color: #fcd05f !important;
+  font-size: 20px
+}
+#dashboard .certificates .first .btn-secondary {
+  background-color: #fbdc8d;
+  border-color: #fbdc8d;
+}
+#dashboard .certificates .btn-secondary {
+  color: #fff;
+  background-color: #fcd05f;
+  border-color: #fcd05f;
+  padding: 5px 50px;
+}
+.popover-body {
+  padding: 0.5rem 0.75rem;
+  color: #ffffff;
+  background: #121212;
+}
+
+#dashboard .quizzes a
+{
+  color: #456d8f
+}
+#dashboard .quizzes h5
+{
+  color: #272b2b;
+  font-size: 18px;
+}
+.bs-popover-top .arrow::after,
+.bs-popover-auto[x-placement^="top"] .arrow::after {
+  bottom: 1px;
+  border-top-color: #121212;
+}
+
+.card:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+  outline: 0;
+}
+.student img
+{
+  border-radius: 50%;
+  width: 50%
+}
+.student h3
+{
+  font-size: 1.2vw;
+  color: #fcd05f
+  
+}
+.notifications .btn-primary {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
+  box-shadow: none
+}
+.notifications .btn-primary:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
+}
+
+.notifications .btn-primary:not(:disabled):not(.disabled):active,
+.notifications .btn-primary:not(:disabled):not(.disabled).active,
+.notifications .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.notifications .badge {
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 97%;
+  font-weight: 700;
+  line-height: 1.7;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 50%;
+}
+.notifications .badge-light {
+  color: #ffffff;
+  background-color: #fcd05f;
+}
+.notifications img
+{
+  border-radius: 50%
+}
+
+.notifications h4
+{
+  padding-left: 10px;
+  font-size: 20px;
+  color: #999;
+}
+.notifications .nav-item
+{
+  cursor: pointer;
+}
+.notifications .fa-bell span
+{
+  background-color: #fcd05f;
+  color: #000;
+  width: 25px;
+  height: 25px;
+  line-height: 1.5;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#dashboard .progress-bar
+{
+  background-color: #fcd05f;
+}
+#dashboard .progress-title{
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 20px;
+}
+
+#dashboard .progress{
+  height: 5px;
+  background: #c4c4c4;
+  border-radius: 0;
+  margin-bottom: 30px;
+  overflow: visible;
+  box-shadow: none;
+  position: relative;
+}
+#dashboard .progress .progress-bar{
+  height:10px;
+  position: relative;
+  top: -3px;
+  box-shadow: none;
+  animation: animate-positive 2s;
+}
+#dashboard .progress .progress-value{
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  top: -30px;
+  right: 5px;
+}
+ 
+@-webkit-keyframes animate-positive{
+  0% { width: 0%; }
+}
+@keyframes animate-positive{
+  0% { width: 0%; }
+}/*--------------------------------------------------
+[2. Start Dashboard ]
+--------------------------------------------------*/
+#dashboard-mange
+{
+  position: relative;
+  padding: 100px 0;
+  color: #000
+}
+
+#dashboard-mange .form
+{
+  background-color: #f9f9f9;
+}
+#dashboard-mange .form form
+{
+  padding: 30px 0
+}
+/*--------------------------------------------------
+[3. Start BILLING DETAILS ]
+--------------------------------------------------*/
+#dashboard-billing
+{
+  position: relative;
+}
+
+#dashboard-billing .form,
+#dashboard-billing .credit-card
+{
+  background-color: #f9f9f9
+}
+
+#dashboard-billing .form form,
+#dashboard-billing .credit-card
+{
+  padding: 30px;
+  color: #000
+}
+
+#dashboard-billing .btn-outline-primary
+{
+  color: #fcd05f;
+  border-color: #fcd05f;
+}
+#dashboard-billing .btn-outline-primary:hover
+{
+  color: #fff;
+  border-color: #fcd05f;
+  background-color: #fcd05f
+}
+#dashboard-billing .disable
+{
+  color: #c4c4c4
+}
+#dashboard-billing .media p
+{
+  font-size: 15px
+}
+
+
+
+
+
+
+/* -------- footer -------- */
+.footer-copyright
+{
+  background: #121212;
+  padding: 15px;
+  margin-top: 100px
+
+}
+
+.footer-copyright a
+{
+  color: #fcd05f
+}
