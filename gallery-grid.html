@@ -16,6 +16,7 @@ License URL: https://github.com/a7medsamirf/eCourses/blob/master/LICENSE
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -81,9 +82,10 @@ License URL: https://github.com/a7medsamirf/eCourses/blob/master/LICENSE
                                 <a class="dropdown-item" href="grid-layout.html">Grid Layout</a>
                                 <a class="dropdown-item" href="listing-layout.html">Listing Layout</a>
                                 <a class="dropdown-item" href="single-course.html">Single course</a>
+
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown active">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 PAGES
@@ -92,7 +94,7 @@ License URL: https://github.com/a7medsamirf/eCourses/blob/master/LICENSE
                                 <a class="dropdown-item" href="Pricing.html">Pricing</a>
                                 <a class="dropdown-item" href="404.html">404</a>
                                 <a class="dropdown-item" href="instructors.html">Instructors</a>
-                                <a class="dropdown-item" href="gallery-grid.html">gallery</a>
+                                <a class="dropdown-item active" href="gallery-grid.html">gallery</a>
                                 <a class="dropdown-item" href="dashboard.html">Dashboard</a>
                                 <a class="dropdown-item" href="dashboard-mange.html">Dashboard Mange</a>
                                 <a class="dropdown-item" href="dashboard-billing.html">Edit Billing</a>
@@ -116,6 +118,7 @@ License URL: https://github.com/a7medsamirf/eCourses/blob/master/LICENSE
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="events.html">Events</a>
                                 <a class="dropdown-item" href="event-single.html">Event Single</a>
+
                             </div>
                         </li>
                         <li class="nav-item">
@@ -141,126 +144,227 @@ License URL: https://github.com/a7medsamirf/eCourses/blob/master/LICENSE
         <!-- ======== End Navbar ======== -->
     </header>
 
-    <!-- ======== Start Become Instructor ======== -->
+    <!-- ======== Start gallery grid page ======== -->
 
-    <section id="become-Instructor">
+    <section id="gallery-grid">
         <div class="breadcrumb-header">
             <div class="container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Become Instructor</li>
+                        <li class="breadcrumb-item active" aria-current="page">gallery grid</li>
                     </ol>
                 </nav>
             </div>
         </div>
         <div class="content">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <img src="assets/images/mathteacher.jpg" class="img-fluid" alt="Responsive image">
+                <div class="row justify-content-center  mb-5">
+                    <div class="col-lg-4 col-md-2 mt-5">
+                        <div class="heading">
+                            <h2>GALLERY</h2>
+                            <span class="line"></span>
+                        </div>
                     </div>
-                    <div class="col-lg-8">
-                        <p class="text-muted text-center mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Unde dolorem, corporis odit quod eius est praesentium ab corrupti reiciendis
-                            molestias quaerat enim quibusdam animi, possimus, perferendis quisquam facilis mollitia
-                            expedita.</p>
+                    <div class="col-lg-8 mt-5">
+                        <div class="mixitup-button">
+                            <button type="button" class="btn btn-primary" data-filter="all">ALL IMAGES</button>
+                            <button type="button" class="btn btn-primary" data-filter=".COURSES">COURSES</button>
+                            <button type="button" class="btn btn-primary" data-filter=".EVENTS">EVENTS</button>
+                            <button type="button" class="btn btn-primary" data-filter=".STUDENTS">STUDENTS</button>
+                            <button type="button" class="btn btn-primary" data-filter=".TEACHERS">TEACHERS</button>
+
+                        </div>
                     </div>
                 </div>
-                <div class="row justify-content-center mt-5">
-                    <div class="col-lg-6 col-md-12 text-center mb-5">
-                        <div class="form">
-                            <h5 class="font-weight-bold text-muted mb-5">REGISTER TO BECOME A INSCTRUCTOR</h5>
-                            <form>
-                                <div class="form-group mb-4">
-                                    <input type="text" class="form-control" placeholder="Your Name">
-                                </div>
-                                <div class="form-group mb-4">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                        placeholder="Your Email Address">
-                                </div>
-                                <div class="form-group mb-4">
-                                    <input type="number" class="form-control" placeholder="Your Phone Number">
-                                </div>
-                                <a href="instructors.html"><button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button></a>
-                            </form>
-                        </div>
+                <div class="row justify-content-center text-center mixitup">
+                    <div class="mix COURSES col-lg-3 col-md-4 col-sm-6" data-order="1">
+                        <figure class="img-box">
+                            <img src="assets/images/gallery/COURSES-1.jpg" class="img-responsive" class="img-fluid" alt="COURSES">
+                            <figcaption>
+                                <p>
+                                    <a href="assets/images/gallery/COURSES-1.jpg" data-fancybox="gallery">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        </a>
                     </div>
-                    <div class="col-lg-6 col-md-12 mb-5">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                            aria-expanded="true" aria-controls="collapseOne">
-                                            Become an Instructor
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p class="text-muted">Sustainable try-hard kale chips, messenger bag
-                                            single-origin coffee keffiyeh fanny pack. Salvia polaroid crucifix,
-                                            chambray four loko swag man braid quinoa vice raw denim taxidermy. Food
-                                            truck flexitarian taxidermy migas hella. Chambray four loko brooklyn
-                                            tousled, vinyl flannel godard thundercats. Artisan mlkshk kitsch
-                                            farm-to-table, cardigan next level bicycle rights trust fund literally
-                                            actually. Four loko art party banjo</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Intructor Rules
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p class="text-muted">Sustainable try-hard kale chips, messenger bag
-                                            single-origin coffee keffiyeh fanny pack. Salvia polaroid crucifix,
-                                            chambray four loko swag man braid quinoa vice raw denim taxidermy. Food
-                                            truck flexitarian taxidermy migas hella. Chambray four loko brooklyn
-                                            tousled, vinyl flannel godard thundercats. Artisan mlkshk kitsch
-                                            farm-to-table, cardigan next level bicycle rights trust fund literally
-                                            actually. Four loko art party banjo</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Create a Course
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p class="text-muted">Sustainable try-hard kale chips, messenger bag
-                                            single-origin coffee keffiyeh fanny pack. Salvia polaroid crucifix,
-                                            chambray four loko swag man braid quinoa vice raw denim taxidermy. Food
-                                            truck flexitarian taxidermy migas hella. Chambray four loko brooklyn
-                                            tousled, vinyl flannel godard thundercats. Artisan mlkshk kitsch
-                                            farm-to-table, cardigan next level bicycle rights trust fund literally
-                                            actually. Four loko art party banjo</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mix EVENTS col-lg-3 col-md-4 col-sm-6" data-order="2">
+                        <figure class="img-box">
+                            <img src="assets/images/gallery/EVENTS-1.jpg" class="img-fluid" alt="EVENTS">
+                            <figcaption>
+                                <p>
+                                    <a href="assets/images/gallery/EVENTS-1.jpg" data-fancybox="gallery">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        </a>
                     </div>
+                    <div class="mix STUDENTS col-lg-3 col-md-4 col-sm-6" data-order="3">
+                        <figure class="img-box">
+                            <img src="assets/images/gallery/STUDENTS-1.jpg" class="img-fluid" alt="STUDENTS">
+                            <figcaption>
+                                <p>
+                                    <a href="assets/images/gallery/STUDENTS-1.jpg" data-fancybox="gallery">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div class="mix TEACHERS col-lg-3 col-md-4 col-sm-6" data-order="4">
+                        <figure class="img-box">
+                            <img src="assets/images/gallery/TEACHERS-1.jpg" class="img-fluid" alt="TEACHERS">
+                            <figcaption>
+                                <p>
+                                    <a href="assets/images/gallery/TEACHERS-1.jpg" data-fancybox="gallery">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div class="mix COURSES col-lg-3 col-md-4 col-sm-6" data-order="5">
+                        <figure class="img-box">
+                            <img src="assets/images/gallery/COURSES-2.jpg" class="img-fluid" alt="COURSES">
+
+                            <figcaption>
+                                <p>
+                                    <a href="assets/images/gallery/COURSES-2.jpg" data-fancybox="gallery">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div class="mix EVENTS col-lg-3 col-md-4 col-sm-6" data-order="6">
+                        <figure class="img-box">
+                            <img src="assets/images/gallery/EVENTS-2.jpg" class="img-fluid" alt="EVENTS">
+                            <figcaption>
+                                <p>
+                                    <a href="assets/images/gallery/EVENTS-2.jpg" data-fancybox="gallery">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div class="mix STUDENTS col-lg-3 col-md-4 col-sm-6" data-order="7">
+                        <figure class="img-box">
+                            <img src="assets/images/gallery/STUDENTS-2.jpg" class="img-fluid" alt="STUDENTS">
+                            <figcaption>
+                                <p>
+                                    <a href="assets/images/gallery/STUDENTS-2.jpg" data-fancybox="gallery">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div class="mix TEACHERS col-lg-3 col-md-4 col-sm-6" data-order="8">
+                        <figure class="img-box">
+                            <img src="assets/images/gallery/TEACHERS-2.jpg" class="img-fluid" alt="TEACHERS">
+                            <figcaption>
+                                <p>
+                                    <a href="assets/images/gallery/TEACHERS-2.jpg" data-fancybox="gallery">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div class="mix COURSES col-lg-3 col-md-4 col-sm-6" data-order="9">
+                        <figure class="img-box">
+                            <img src="assets/images/gallery/COURSES-3.jpg" class="img-fluid" alt="COURSES">
+                            <figcaption>
+                                <p>
+                                    <a href="assets/images/gallery/COURSES-3.jpg" data-fancybox="gallery">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div class="mix EVENTS col-lg-3 col-md-4 col-sm-6" data-order="10">
+                        <figure class="img-box">
+                            <img src="assets/images/gallery/EVENTS-3.jpg" class="img-fluid" alt="EVENTS">
+                            <figcaption>
+                                <p>
+                                    <a href="assets/images/gallery/EVENTS-3.jpg" data-fancybox="gallery">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div class="mix STUDENTS col-lg-3 col-md-4 col-sm-6" data-order="10">
+                        <figure class="img-box">
+                            <img src="assets/images/gallery/STUDENTS-3.jpg" class="img-fluid" alt="STUDENTS">
+
+                            <figcaption>
+                                <p>
+                                    <a href="assets/images/gallery/STUDENTS-3.jpg" data-fancybox="gallery">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div class="mix TEACHERS col-lg-3 col-md-4 col-sm-6" data-order="10">
+                        <figure class="img-box">
+                            <img src="assets/images/gallery/TEACHERS-3.jpg" class="img-fluid" alt="TEACHERS">
+                            <figcaption>
+                                <p>
+                                    <a href="assets/images/gallery/TEACHERS-3.jpg" data-fancybox="gallery">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center">
+                    <nav aria-label="..." class="mb-5">
+                        <ul class="pagination mt-5">
+                            <li class="page-item disabled">
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <span class="page-link">
+                                    2
+                                    <span class="sr-only">(current)</span>
+                                </span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ======== End Become Instructor ======== -->
+    <!-- ======== End gallery grid page ======== -->
 
     <!-- ======== Start footer ======== -->
+
     <footer id="footer">
         <div class="container">
             <div class="row justify-content-center">
@@ -352,11 +456,14 @@ License URL: https://github.com/a7medsamirf/eCourses/blob/master/LICENSE
     </footer>
     <!-- ======== End footer ======== -->
 
+
     <!-- jquery library -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.nicescroll.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
     <script src="assets/js/custom.js"></script>
 
 </body>

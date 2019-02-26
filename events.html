@@ -29,6 +29,7 @@ License URL: https://github.com/a7medsamirf/eCourses/blob/master/LICENSE
 </head>
 
 <body>
+
   <header id="min-header" class="header-section fadeIn animated cssanimation">
     <!-- ======== Start Top Nav ======== -->
     <div class="top-header">
@@ -80,16 +81,17 @@ License URL: https://github.com/a7medsamirf/eCourses/blob/master/LICENSE
                 <a class="dropdown-item" href="grid-layout.html">Grid Layout</a>
                 <a class="dropdown-item" href="listing-layout.html">Listing Layout</a>
                 <a class="dropdown-item" href="single-course.html">Single course</a>
+
               </div>
             </li>
-            <li class="nav-item dropdown active">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 PAGES
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="Pricing.html">Pricing</a>
-                <a class="dropdown-item active" href="404.html">404</a>
+                <a class="dropdown-item" href="404.html">404</a>
                 <a class="dropdown-item" href="instructors.html">Instructors</a>
                 <a class="dropdown-item" href="gallery-grid.html">gallery</a>
                 <a class="dropdown-item" href="dashboard.html">Dashboard</a>
@@ -107,16 +109,18 @@ License URL: https://github.com/a7medsamirf/eCourses/blob/master/LICENSE
                 <a class="dropdown-item" href="blog-post.html">Single post</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown active">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 EVENTS
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="events.html">Events</a>
+                <a class="dropdown-item active" href="events.html">Events</a>
                 <a class="dropdown-item" href="event-single.html">Event Single</a>
+
               </div>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="contact-us.html">CONTACT US</a>
             </li>
@@ -139,25 +143,126 @@ License URL: https://github.com/a7medsamirf/eCourses/blob/master/LICENSE
     <!-- ======== End Navbar ======== -->
   </header>
 
-  <!-- ======== Start error page ======== -->
 
-  <div id="error">
+  <!-- ======== Start events ======== -->
+
+  <section id="events">
+    <div class="breadcrumb-header">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Event</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
     <div class="content">
       <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-6">
-            <h1> <span>404</span> ERROR!</h1>
-            <h5 class="mt-4">Sorry, we can't find the page you are looking for.</h5>
-            <button type="button" class="btn btn-primary mt-4">
-              <router-link to="/" exact>Please go to Home.</router-link>
-            </button>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="card">
+              <div class="img-box">
+                <img src="assets/images/event/1.jpg" class="img-fluid card-img-top" alt="event">
+              </div>
+              <div class="card-body">
+                <a href="event-single.html">
+                  <h5 class="card-title">Founder Institute Information Session</h5>
+                </a>
+                <ul class="time">
+                  <li><i class="far fa-clock"></i>Thursday, June 30, 2018 <span>6:00 PM</span></li>
+
+                  <li><i class="fas fa-map-marker-alt"></i>This location is shown only to members</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="card">
+              <div class="img-box">
+                <img src="assets/images/event/2.jpg" class="img-fluid card-img-top" alt="event">
+              </div>
+              <div class="card-body">
+                <a href="event-single.html">
+                  <h5 class="card-title">Open House - Project night</h5>
+                </a>
+                <ul class="time">
+                  <li><i class="far fa-clock"></i>Thursday, June 30, 2018 <span>6:00 PM</span></li>
+                  <li><i class="fas fa-map-marker-alt"></i>This location is shown only to members</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="card">
+              <div class="img-box">
+                <img src="assets/images/event/3.jpg" class="img-fluid card-img-top" alt="event">
+              </div>
+              <div class="card-body">
+                <a href="event-single.html">
+                  <h5 class="card-title">Play Board Games!</h5>
+                </a>
+                <ul class="time">
+                  <li><i class="far fa-clock"></i>Thursday, June 30, 2018 <span>6:00 PM</span></li>
+                  <li><i class="fas fa-map-marker-alt"></i>This location is shown only to members</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="card">
+              <div class="img-box">
+                <img src="assets/images/event/4.jpg" class="img-fluid card-img-top" alt="event">
+              </div>
+              <div class="card-body">
+                <a href="event-single.html">
+                  <h5 class="card-title">Become an Artist of Meditation</h5>
+                </a>
+                <ul class="time">
+                  <li><i class="far fa-clock"></i>Thursday, June 30, 2018 <span>6:00 PM</span></li>
+                  <li><i class="fas fa-map-marker-alt"></i>This location is shown only to members</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="card">
+              <div class="img-box">
+                <img src="assets/images/event/5.jpg" class="img-fluid card-img-top" alt="event">
+              </div>
+              <div class="card-body">
+                <a href="event-single.html">
+                  <h5 class="card-title">Northwest Indiana Preppers has MOVED!</h5>
+                </a>
+                <ul class="time">
+                  <li><i class="far fa-clock"></i>Thursday, June 30, 2018 <span>6:00 PM</span></li>
+                  <li><i class="fas fa-map-marker-alt"></i>This location is shown only to members</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="card">
+              <div class="img-box">
+                <img src="assets/images/event/6.jpg" class="img-fluid card-img-top" alt="event">
+              </div>
+              <div class="card-body">
+                <a href="event-single.html">
+                  <h5 class="card-title">Original Art Showcase</h5>
+                </a>
+                <ul class="time">
+                  <li><i class="far fa-clock"></i>Thursday, June 30, 2018 <span>6:00 PM</span></li>
+                  <li><i class="fas fa-map-marker-alt"></i>Tippecanoe Arts Federation</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- ======== End error page ======== -->
+  <!-- ======== End events ======== -->
 
   <!-- ======== Start footer ======== -->
   <footer id="footer">
@@ -249,6 +354,7 @@ License URL: https://github.com/a7medsamirf/eCourses/blob/master/LICENSE
     </div>
   </footer>
   <!-- ======== End footer ======== -->
+
 
   <!-- jquery library -->
   <script src="assets/js/jquery-3.3.1.min.js"></script>
