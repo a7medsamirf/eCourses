@@ -2338,15 +2338,13 @@ figure.img-box:hover img {
   width: 100%;
   height: 100vh;
   position: fixed;
-  background-color: #000;
+  background-color: #CCD0D4;
   top: 0;
   left: 0;
   z-index: 9999;
 }
 
 .sk-cube-grid {
-  width: 40px;
-  height: 40px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -2354,86 +2352,59 @@ figure.img-box:hover img {
   transform: translate(-50%, -50%);
 }
 
-.sk-cube-grid .sk-cube {
-  width: 33%;
-  height: 33%;
-  float: left;
-  background-color: #fcd05f;
-  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+.loader {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  font-size: 4.6875em;
+  color: transparent;
+  letter-spacing: 0.01em;
 }
 
-.sk-cube-grid .sk-cube1 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
+.loader span {
+  text-shadow:
+    0 0 2px rgba(204, 208, 212,0.9),
+    0 15px 25px rgba(0, 0, 0, 0.3),
+    0 -2px 3px rgba(0, 0, 0, 0.1),
+    0 -5px 10px rgba(255, 255, 255, 0.5),
+    0 5px 10px rgba(0, 0, 0, 0.3),
+    0 3px 4px rgba(255, 255, 255, 0.2),
+    0 0 20px rgba(255, 255, 255, 0.45);
+  
+    animation: loading 0.85s ease-in-out infinite alternate;
 }
 
-.sk-cube-grid .sk-cube2 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
+@keyframes loading {
+	to {text-shadow:
+    0 0 2px rgba(204, 208, 212,0.2),
+    0 0 3px rgba(0, 0, 0, 0.02),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(255, 255, 255, 0);}
 }
 
-.sk-cube-grid .sk-cube3 {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
+.loader span:nth-child(2) {
+  animation-delay:0.15s;
 }
 
-.sk-cube-grid .sk-cube4 {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
+.loader span:nth-child(3) {
+  animation-delay:0.30s;
 }
 
-.sk-cube-grid .sk-cube5 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
+.loader span:nth-child(4) {
+  animation-delay:0.45s;
 }
 
-.sk-cube-grid .sk-cube6 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
+.loader span:nth-child(5) {
+  animation-delay:0.60s;
 }
 
-.sk-cube-grid .sk-cube7 {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
+.loader span:nth-child(6) {
+  animation-delay:0.75s;
 }
 
-.sk-cube-grid .sk-cube8 {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-
-.sk-cube-grid .sk-cube9 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-@-webkit-keyframes sk-cubeGridScaleDelay {
-
-  0%,
-  70%,
-  100% {
-      -webkit-transform: scale3D(1, 1, 1);
-      transform: scale3D(1, 1, 1);
-  }
-
-  35% {
-      -webkit-transform: scale3D(0, 0, 1);
-      transform: scale3D(0, 0, 1);
-  }
-}
-
-@keyframes sk-cubeGridScaleDelay {
-
-  0%,
-  70%,
-  100% {
-      -webkit-transform: scale3D(1, 1, 1);
-      transform: scale3D(1, 1, 1);
-  }
-
-  35% {
-      -webkit-transform: scale3D(0, 0, 1);
-      transform: scale3D(0, 0, 1);
-  }
+.loader span:nth-child(7) {
+  animation-delay:0.90s;
 }
