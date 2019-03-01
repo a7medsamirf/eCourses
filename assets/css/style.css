@@ -1937,13 +1937,16 @@ input[type=number]::-webkit-outer-spin-button {
   left: 0;
   right: 0;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 #instructors .instructor-card:hover .instructors-social {
   background-color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  transform: translateY(-160px);
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px);
   padding: 50px 0;
 }
 
@@ -2016,15 +2019,18 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 50%;
   text-align: center;
   margin-right: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 #contact-us .call-info i:hover,
 #contact-us .call-info i:hover {
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   background: #fcd05f;
   color: #fff;
-  box-shadow: 0 2px 2px 0 #fff, 0 0 0 3px #fff inset, 0 0 10px 7px rgba(0, 0, 0, .12);
+  -webkit-box-shadow: 0 2px 2px 0 #fff, 0 0 0 3px #fff inset, 0 0 10px 7px rgba(0, 0, 0, .12);
+          box-shadow: 0 2px 2px 0 #fff, 0 0 0 3px #fff inset, 0 0 10px 7px rgba(0, 0, 0, .12);
 }
 
 #contact-us .call-info span {
@@ -2092,7 +2098,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .mix figure figcaption {
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   color: #fff;
   font-size: 1.25em;
   text-transform: uppercase;
@@ -2127,36 +2134,46 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .mix figure.img-box img {
+  -webkit-transition: opacity .35s ease 0s, -webkit-transform .35s ease 0s;
+  transition: opacity .35s ease 0s, -webkit-transform .35s ease 0s;
   transition: opacity .35s ease 0s, transform .35s ease 0s;
+  transition: opacity .35s ease 0s, transform .35s ease 0s, -webkit-transform .35s ease 0s;
 }
 
 figure.img-box:hover img {
   opacity: 0.35;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .mix figure.img-box figcaption:before,
 .mix figure.img-box p {
   opacity: 0;
+  -webkit-transition: opacity 0.35s ease 0s, -webkit-transform 0.35s ease 0s;
+  transition: opacity 0.35s ease 0s, -webkit-transform 0.35s ease 0s;
   transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+  transition: opacity 0.35s ease 0s, transform 0.35s ease 0s, -webkit-transform 0.35s ease 0s;
 }
 
 .mix figure.img-box p {
   margin: 0 auto;
   max-width: 200px;
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   padding: 40% 0 20px;
 }
 
 .mix figure.img-box:hover figcaption:before,
 .mix figure.img-box:hover p {
   opacity: 1;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .mix figure.img-box:hover h4 {
   opacity: 1;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .mix figure img {
@@ -2177,14 +2194,20 @@ figure.img-box:hover {
 }
 
 figure.img-box img {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity .35s ease 0s, -webkit-transform .35s ease 0s;
+  transition: opacity .35s ease 0s, -webkit-transform .35s ease 0s;
   transition: opacity .35s ease 0s, transform .35s ease 0s;
+  transition: opacity .35s ease 0s, transform .35s ease 0s, -webkit-transform .35s ease 0s;
 }
 
 figure.img-box:hover img {
   opacity: 0.40;
-  transform: scale(1.15);
-  filter: blur(2px);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
 
 
@@ -2328,6 +2351,11 @@ figure.img-box:hover img {
     padding: 20vh 0;
   }
 
+
+  .loader span {
+    font-size: 20px
+  }
+
 }
 
 /*--------------------------------------------------
@@ -2363,48 +2391,69 @@ figure.img-box:hover img {
 
 .loader span {
   text-shadow:
-    0 0 2px rgba(204, 208, 212,0.9),
+    0 0 2px rgba(204, 208, 212, 0.9),
     0 15px 25px rgba(0, 0, 0, 0.3),
     0 -2px 3px rgba(0, 0, 0, 0.1),
     0 -5px 10px rgba(255, 255, 255, 0.5),
     0 5px 10px rgba(0, 0, 0, 0.3),
     0 3px 4px rgba(255, 255, 255, 0.2),
     0 0 20px rgba(255, 255, 255, 0.45);
-  
-    animation: loading 0.85s ease-in-out infinite alternate;
+  -webkit-animation: loading 0.85s ease-in-out infinite alternate;
+          animation: loading 0.85s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes loading {
+  to {
+    text-shadow:
+      0 0 2px rgba(204, 208, 212, 0.2),
+      0 0 3px rgba(0, 0, 0, 0.02),
+      0 0 0 rgba(0, 0, 0, 0),
+      0 0 0 rgba(255, 255, 255, 0),
+      0 0 0 rgba(0, 0, 0, 0),
+      0 0 0 rgba(255, 255, 255, 0),
+      0 0 0 rgba(255, 255, 255, 0);
+  }
 }
 
 @keyframes loading {
-	to {text-shadow:
-    0 0 2px rgba(204, 208, 212,0.2),
-    0 0 3px rgba(0, 0, 0, 0.02),
-    0 0 0 rgba(0, 0, 0, 0),
-    0 0 0 rgba(255, 255, 255, 0),
-    0 0 0 rgba(0, 0, 0, 0),
-    0 0 0 rgba(255, 255, 255, 0),
-    0 0 0 rgba(255, 255, 255, 0);}
+  to {
+    text-shadow:
+      0 0 2px rgba(204, 208, 212, 0.2),
+      0 0 3px rgba(0, 0, 0, 0.02),
+      0 0 0 rgba(0, 0, 0, 0),
+      0 0 0 rgba(255, 255, 255, 0),
+      0 0 0 rgba(0, 0, 0, 0),
+      0 0 0 rgba(255, 255, 255, 0),
+      0 0 0 rgba(255, 255, 255, 0);
+  }
 }
 
 .loader span:nth-child(2) {
-  animation-delay:0.15s;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
 }
 
 .loader span:nth-child(3) {
-  animation-delay:0.30s;
+  -webkit-animation-delay: 0.30s;
+          animation-delay: 0.30s;
 }
 
 .loader span:nth-child(4) {
-  animation-delay:0.45s;
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
 }
 
 .loader span:nth-child(5) {
-  animation-delay:0.60s;
+  -webkit-animation-delay: 0.60s;
+          animation-delay: 0.60s;
 }
 
 .loader span:nth-child(6) {
-  animation-delay:0.75s;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
 }
 
 .loader span:nth-child(7) {
-  animation-delay:0.90s;
+  -webkit-animation-delay: 0.90s;
+          animation-delay: 0.90s;
 }
