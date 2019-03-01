@@ -2354,10 +2354,26 @@ figure.img-box:hover img {
 }
 @media only screen and (max-width: 767.98px) {
   .loader {
-    font-size: 1.7rem !important;
+    font-size: 2rem !important;
   }
   
 }
+
+@media only screen and (max-width: 575.98px) {
+  .loader {
+    font-size: 1.5rem !important;
+  }
+  .separator-pipesign {
+    margin: -3px 0px;
+}
+ .top-header .call-info,
+.top-header .user-login .top-header .call-info i,
+.top-header .user-login i {
+  padding: 0;
+}
+
+}
+
 
 /*--------------------------------------------------
 [32. Start Loading Page ]
