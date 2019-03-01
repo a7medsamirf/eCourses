@@ -2351,11 +2351,12 @@ figure.img-box:hover img {
     padding: 20vh 0;
   }
 
-
-  .loader span {
-    font-size: 20px
+}
+@media only screen and (max-width: 767.98px) {
+  .loader {
+    font-size: 2rem !important;
   }
-
+  
 }
 
 /*--------------------------------------------------
@@ -2366,7 +2367,7 @@ figure.img-box:hover img {
   width: 100%;
   height: 100vh;
   position: fixed;
-  background-color: #CCD0D4;
+  background-color: #1f1f1f;
   top: 0;
   left: 0;
   z-index: 9999;
@@ -2384,7 +2385,7 @@ figure.img-box:hover img {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Nunito', sans-serif;
-  font-size: 4.6875em;
+  font-size: 3.7rem;
   color: transparent;
   letter-spacing: 0.01em;
 }
