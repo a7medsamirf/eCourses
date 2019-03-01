@@ -271,20 +271,3 @@ $(document).ready(function () {
       start loading 
 ===================================== */
 
-// start loading 
-$(window).on("load", function () {
-
-  "use strict";
-
-  // Loading Elements
-
-  $(".sk-cube-grid").fadeOut(1000, function () {
-
-    // Show The Scroll
-
-    $(this).parent().slideUp(1000, function () {
-
-      $(this).remove();
-    });
-  });
-});
