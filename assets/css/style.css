@@ -258,6 +258,13 @@ input[type=number]::-webkit-outer-spin-button {
   border-color: #fcd05f;
 }
 
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #fcd05f;
+}
+
 /*--------------------------------------------------
 [5. Start Side Widget ]
 --------------------------------------------------*/
