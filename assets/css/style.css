@@ -1,7 +1,7 @@
 /*
 Template Name: eCourses | Personal Portfolio HTML5 Template
 Author: Ahmed Samir
-Author URI: https://www.facebook.com/a7med.samir.f
+Author URI: https://www.facebook.com/a7med.samir.93/
 Description: eCourses | Personal Portfolio HTML5 Template
 Version: 1.0
 Tags: bootstrap, clean, creative, cv, freelancer, gallery, html5, one page, personal, portfolio, responsive, resume, simple, vcard
@@ -42,6 +42,7 @@ Style Index
     30. Start Footer 
     31. Start Media Query Section
     32. Start Loading Page
+    33. Start scrollToTop
 */
 
 /* Main Css Rules  for Main Elements in The project */
@@ -298,17 +299,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .card {
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  box-shadow: rgb(187 203 216) 0px 14px 22px -9px;
   border: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-.card:hover {
-  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
-  outline: 0;
 }
 
 .widget .card-body .btn-secondary {
@@ -502,7 +496,7 @@ input[type=number]::-webkit-outer-spin-button {
   right: 0;
   left: initial;
   z-index: 1000;
-  min-width: 21rem;
+  min-width: 22rem;
   padding: 0.9rem 23px;
   margin: 1.5rem 0 0;
   font-size: 1rem;
@@ -511,10 +505,9 @@ input[type=number]::-webkit-outer-spin-button {
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 0;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
 }
 
 .dropdown-menu {
@@ -531,10 +524,9 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: left;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 0;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
 }
 
 .dropdown-item.active,
@@ -707,12 +699,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 .popular-courses {
   position: relative;
-  padding: 100px 0;
+  padding: 50px 0;
+  background-color: rgb(241, 246, 255);
 }
 
 .popular-courses .card {
   position: relative;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .popular-courses .card .post-img {
@@ -783,7 +777,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .canlearn {
   position: relative;
-  padding-bottom: 100px;
+  padding: 50px 0;
 }
 
 .canlearn h5 {
@@ -849,7 +843,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: relative;
   background: url('../../assets/images/Offers-bg.jpg');
   background-size: cover;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 #offers .timer h3 span {
@@ -916,7 +910,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 #latest-news {
   position: relative;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 #latest-news .date {
@@ -976,7 +970,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 #achievements {
   position: relative;
-  padding: 100px 0;
+  padding: 50px 0;
   background: url('../../assets/images/achievements/achievements-bg.jpg');
   background-size: cover;
 }
@@ -1004,7 +998,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 #newsletter {
   position: relative;
-  padding: 100px 0;
+  padding: 50px 0;
   background-color: #fcd05f;
   color: #000
 }
@@ -1047,7 +1041,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 #people-say {
   position: relative;
-  padding: 100px 0
+  padding: 50px 0px;
+  background-color: rgb(241, 246, 255);
 }
 
 #clients-slider .media {
@@ -1148,17 +1143,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #blog .card {
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  box-shadow: rgb(187 203 216) 0px 14px 22px -9px;
   border: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-#blog .card:hover {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  outline: 0;
 }
 
 #blog .card-title {
@@ -2480,4 +2468,34 @@ figure.img-box:hover img {
 .loader span:nth-child(7) {
   -webkit-animation-delay: 0.90s;
           animation-delay: 0.90s;
+}
+
+/*--------------------------------------------------
+[33. Start scrollToTop ]
+--------------------------------------------------*/
+.scrollToTop {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 100%;
+  color: #fff;
+  position: fixed;
+  left: 15px;
+  bottom: 60px;
+  z-index: 999;
+  cursor: pointer;
+  transform: translate(-80px,0);
+  transition: .5s ease-in-out;
+  box-shadow: 0 8px 16px 0 #fcd05f;
+  background-color: #fcd05f !important;
+}
+
+a.scrollToTop:hover {
+  color: #fff
+}
+
+.scrollToTop .fa-rocket {
+  transform: rotate(-45deg);
+  font-size: 25px;
+  line-height: 58px
 }

@@ -2,7 +2,7 @@
 
 Template Name: eCourses | Personal Portfolio HTML5 Template
 Author: Ahmed Samir
-Author URI: https://www.facebook.com/a7med.samir.f
+Author URI: https://www.facebook.com/a7med.samir.93/
 Description: eCourses | Personal Portfolio HTML5 Template
 Version: 1.0
 
@@ -35,7 +35,7 @@ $(document).ready(function () {
 /* ==================================
       Start niceScroll
 ===================================== */
-$(document).ready(function () {
+/* $(document).ready(function () {
   $("html").niceScroll({
     scrollspeed: "100",
     cursorcolor: "#fcd05f",
@@ -44,7 +44,7 @@ $(document).ready(function () {
     sensitiverail: false,
     horizrailenabled: false,
   });
-});
+}); */
 
 /* ==================================
       Start dropdown
@@ -287,4 +287,30 @@ $(window).on("load", function () {
       $(this).remove();
     });
   });
+});
+
+
+/* ==================================
+      Check the scroll position
+===================================== */
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 100) {
+    event.preventDefault();
+    $(".scrollToTop").css({
+      'transform': 'translate(0px, 0px)'
+    });
+  } else {
+    $(".scrollToTop").css({
+      'transform': 'translate(-80px, 0px)'
+    });
+  }
+});
+/* ==================================
+     Click and scrolls top effect
+===================================== */
+$('.scrollToTop').click(function () {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 800);
+  return false;
 });
