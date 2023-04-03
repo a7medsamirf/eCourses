@@ -109,7 +109,7 @@ a:focus {
 }
 
 .sidebar-header span {
-  color: #fcd05f;
+  color: #ffc107;
 }
 
 i,
@@ -130,27 +130,27 @@ span {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #fcd05f;
+  background: #ffc107;
   border-radius: 0px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #fcd05f;
+  background: #ffc107;
 }
 
 .btn-info {
   color: #fff;
-  background-color: #fcd05f;
-  border-color: #fcd05f;
+  background-color: #ffc107;
+  border-color: #ffc107;
   -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 }
 
 .btn-info:hover {
   color: #fff;
-  background-color: #fcd05f;
-  border-color: #fcd05f;
+  background-color: #ffc107;
+  border-color: #ffc107;
   -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
   outline: 0;
@@ -160,8 +160,8 @@ span {
 .btn-info:not(:disabled):not(.disabled).active,
 .show>.btn-info.dropdown-toggle {
   color: #fff;
-  background-color: #fcd05f;
-  border-color: #fcd05f;
+  background-color: #ffc107;
+  border-color: #ffc107;
 }
 
 .notifications .dropdown-menu {
@@ -178,10 +178,12 @@ span {
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
 /* ---------------------------------------------------
@@ -283,7 +285,7 @@ span {
 
 #sidebar ul li a:hover {
   color: #fff;
-  background-color: #fcd05f;
+  background-color: #ffc107;
 }
 
 #sidebar ul li a i {
@@ -611,7 +613,7 @@ a.article:hover {
 
 #dashboard .card-footer .rating {
   float: right;
-  color: #fcd05f !important;
+  color: #ffc107 !important;
   font-size: 20px
 }
 
@@ -622,8 +624,8 @@ a.article:hover {
 
 #dashboard .certificates .btn-secondary {
   color: #fff;
-  background-color: #fcd05f;
-  border-color: #fcd05f;
+  background-color: #ffc107;
+  border-color: #ffc107;
   padding: 5px 50px;
 }
 
@@ -661,7 +663,7 @@ a.article:hover {
 
 .student h3 {
   font-size: 1.2vw;
-  color: #fcd05f
+  color: #ffc107
 }
 
 .notifications .btn-primary {
@@ -702,7 +704,7 @@ a.article:hover {
 
 .notifications .badge-light {
   color: #ffffff;
-  background-color: #fcd05f;
+  background-color: #ffc107;
 }
 
 .notifications img {
@@ -720,7 +722,7 @@ a.article:hover {
 }
 
 .notifications .fa-bell span {
-  background-color: #fcd05f;
+  background-color: #ffc107;
   color: #000;
   width: 25px;
   height: 25px;
@@ -733,7 +735,7 @@ a.article:hover {
 }
 
 #dashboard .progress-bar {
-  background-color: #fcd05f;
+  background-color: #ffc107;
 }
 
 #dashboard .progress-title {
@@ -822,14 +824,17 @@ a.article:hover {
 }
 
 #dashboard-billing .btn-outline-primary {
-  color: #fcd05f;
-  border-color: #fcd05f;
+  color: #ffc107;
+  border-color: #ffc107;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 10px 20px;
 }
 
 #dashboard-billing .btn-outline-primary:hover {
   color: #fff;
-  border-color: #fcd05f;
-  background-color: #fcd05f
+  border-color: #ffc107;
+  background-color: #ffc107
 }
 
 #dashboard-billing .disable {
@@ -853,7 +858,7 @@ a.article:hover {
 }
 
 .footer-copyright a {
-  color: #fcd05f
+  color: #ffc107
 }
 
 
@@ -902,7 +907,7 @@ a.article:hover {
 
   #dashboard .subscription .btn {
     color: #fff;
-    background-color: #fcd05f;
+    background-color: #ffc107;
     padding: 0.375rem 0.75rem;
     font-size: 10px;
     line-height: 1.5;
